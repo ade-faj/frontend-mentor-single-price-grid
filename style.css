@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--light-gray);
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto ;
+} 
+
+.first-box,
+.second-box,
+.third-box {
+    width: 100%;
+    height: 250px;
+    padding: 25px;
+}
+
+.first-box {
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 8px 8px 0 0;
+}
+
+.first-box h2 {
+    margin-bottom: 20px;
+    color: var(--cyan);
+    font-weight: 700;
+}
+
+.first-box h4 {
+    margin-bottom: 15px;
+    color: #BFDF33;
+}
+
+.first-box p {
+    line-height: 2;
+    color: #D9DCF3;
+}
+
+.second-box,
+.third-box {
+    color: #E9ECF3;
+}
+
+.second-box {
+    background-color: #2DB2B1;
+}
+
+.second-box h2,
+.third-box h2{
+    margin-bottom: 20px;
+}
+
+.second-box div{
+    margin-bottom: 15px;
+}
+
+.second-box div span{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.second-box p {
+    margin-bottom: 25px;
+}
+
+.second-box button {
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: transparent;
+    color: #E9ECF3;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    background-color: #BFDF33;
+}
+
+.third-box {
+    background-color: #4ABDBD;
+    border-radius: 0 0 8px 8px;
+}
+
+.third-box ul{
+    list-style: none;
+}
+
+.third-box li{
+    margin-bottom: 5px;
+}
+
+/* .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} */
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+    }
+}
