@@ -19,15 +19,17 @@ body {
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 } 
 
 .first-box,
 .second-box,
 .third-box {
-    width: 100%;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     padding: 25px;
 }
 
