@@ -117,7 +117,47 @@ body {
 } */
 
 @media (min-width: 768px) {
-    .container {
+
+    .first-box,
+    .second-box,
+    .third-box {
+    width: 100%;
+    padding: 25px;
+    }
+
+    .grid {
         display: grid;
+        margin-top: 50px;
+    }
+
+    .first-box {
+        height: 200px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .first-box h2 {
+        margin-bottom: 30px;
+    }
+    
+    .first-box h4 {
+        margin-bottom: 20px;
+    }
+    
+    .first-box p {
+        line-height: 2;
+        color: #D9DCF3;
+    }
+
+    .second-box {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-radius: 0 0 0 8px;
+    }
+
+    .third-box {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-radius: 0 0 8px 0;
     }
 }
